@@ -9,6 +9,7 @@
         <meta property="og:type" content="website"/>
         
         <title>AwesomeSoundLib - aweslib</title>
+        <link rel="icon" href="/icon.png"  type="image/png">
     </head>
     <body>
         <style>
@@ -28,10 +29,13 @@
             }
             /* DIVs */
             div.left {
+                position: relative;
                 float: left;
             }
             div.right {
+                position: sticky;
                 float: right;
+
             }
             div.panel {
                 width: 50ch;
@@ -76,6 +80,9 @@
                 <button>New</button> 
                 <button>Generate</button> 
                 <button>Help</button>
+                <div class="instruments">
+                    
+                </div>
             </div>
         </div>
         <div class="right">
@@ -83,5 +90,6 @@
                 <p id="info-panel">AwesomeSoundLib (aweslib) is a site for a code library on the minecraft server <a href="https://www.mcdiamondfire.com">DiamondFire</a>. If you want to use this library, grab the code from the <abbr title="Plot 43780 on DiamondFire">Code Vault (<span class="clr-link">Plot 43780</span>)</abbr></p>
             </div>
         </div>
+        <script src="/gen.js"></script>
     </body>
 </html>
