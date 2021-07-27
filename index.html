@@ -6,6 +6,7 @@
         <meta property="og:description" content="AwesomeSoundLib (aka. aweslib)"/>
         <meta property="og:image" content="/icon.png"/>
         <meta property="og:url" content="https://tj20201.github.io/aweslib-site"/>
+        <meta property="og:type" content="website"/>
         
         <title>AwesomeSoundLib - aweslib</title>
     </head>
@@ -22,6 +23,13 @@
             h2 {
                 margin-top: 0;
             }
+            /* DIVs */
+            div.generator {
+                width: 50ch;
+                height: auto;
+                background-color: rgb(76, 76, 71);
+                color: rgb(166, 166, 161);
+            }
             /* Text Colours */
             .clr-red {
                 color: rgb(193, 73, 83);
@@ -36,8 +44,24 @@
             .font-consolas {
                 font-family: Consolas;
             }
+            /* Buttons */
+            button { 
+                background-color: rgb(117, 117, 118);
+                color: rgb(193, 193, 194);
+                border: 5px;
+                transition-duration: 0.15s;
+            }
+            button:hover { 
+                background-color: rgb(137, 137, 138);
+                color: rgb(223, 223, 224);
+                border: 5px;
+            }
         </style>
         <h1 class="clr-orange"><span class="clr-red">A</span>wesome<span class="clr-red">S</span>ound<span class="clr-red">L</span>ib</h1>
         <h2 class="clr-blue font-consolas">aweslib</h2>
+        <div class="generator">
+            <button>New</button> <button>Generate</button> <button>Help</button>
+        </div>
+        
     </body>
 </html>
