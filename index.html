@@ -23,14 +23,26 @@
             h2 {
                 margin-top: 0;
             }
+            a {
+                color: rgb(222, 173, 163);
+            }
             /* DIVs */
-            div.generator {
+            div.left {
+                float: left;
+            }
+            div.right {
+                float: right;
+            }
+            div.panel {
                 width: 50ch;
                 height: auto;
                 background-color: rgb(76, 76, 71);
                 color: rgb(166, 166, 161);
             }
             /* Text Colours */
+            .clr-link {
+                color: rgb(222, 173, 163);
+            }
             .clr-red {
                 color: rgb(193, 73, 83);
             }
@@ -57,11 +69,19 @@
                 border: 5px;
             }
         </style>
-        <h1 class="clr-orange"><span class="clr-red">A</span>wesome<span class="clr-red">S</span>ound<span class="clr-red">L</span>ib</h1>
-        <h2 class="clr-blue font-consolas">aweslib</h2>
-        <div class="generator">
-            <button>New</button> <button>Generate</button> <button>Help</button>
+        <div class="left">
+            <h1 class="clr-orange"><span class="clr-red">A</span>wesome<span class="clr-red">S</span>ound<span class="clr-red">L</span>ib</h1>
+            <h2 class="clr-blue font-consolas">aweslib</h2>
+            <div class="panel">
+                <button>New</button> 
+                <button>Generate</button> 
+                <button>Help</button>
+            </div>
         </div>
-        
+        <div class="right">
+            <div class="panel">
+                <p id="info-panel">AwesomeSoundLib (aweslib) is a site for a code library on the minecraft server <a href="https://www.mcdiamondfire.com">DiamondFire</a>. If you want to use this library, grab the code from the <abbr title="Plot 43780 on DiamondFire">Code Vault (<span class="clr-link">Plot 43780</span>)</abbr></p>
+            </div>
+        </div>
     </body>
 </html>
