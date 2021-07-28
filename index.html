@@ -72,6 +72,50 @@
                 color: rgb(223, 223, 224);
                 border: 5px;
             }
+            .removebtn {
+                background-color: rgb(233, 117, 118);
+                color: rgb(245, 245, 246);
+                border: 5px;
+                transition-duration: 0.25s;
+            }
+            .removebtn:hover {
+                background-color: rgb(255, 139, 140);
+                color: rgb(255, 255, 255);
+            }
+            /* Form Elements */
+            input {
+                background-color: rgb(117, 117, 118);
+                color: rgb(193, 193, 194);
+                border: 5px;
+                transition: 0.15s;
+            }
+            input::placeholder {
+                color: rgb(133, 133, 134);
+            }
+            input:hover, input:focus {
+                background-color: rgb(147, 147, 148);
+                color: rgb(223, 223, 224);
+            }
+            input::placeholder:hover, input::placeholder:focus {
+                color: rgb(163, 163, 164);
+            }
+            select {
+                font-family: consolas;
+                background-color: rgb(117, 117, 118);
+                color: rgb(193, 193, 194);
+                border: 5px;
+                transition: 0.15s;
+            }
+            option {
+                background-color: rgb(147, 147, 148);
+                color: rgb(223, 223, 224);
+                border: 5px;
+                transition: 0.3s;
+            }
+            select:hover, option:hover {
+                background-color: rgb(187, 187, 188);
+                color: rgb(243, 243, 244);
+            }
         </style>
         <div class="left">
             <h1 class="clr-orange"><span class="clr-red">A</span>wesome<span class="clr-red">S</span>ound<span class="clr-red">L</span>ib</h1>
@@ -80,7 +124,7 @@
                 <button onclick="newn();">New</button> 
                 <button onclick="generate();">Generate</button> 
                 <div class="instruments">
-                    <br><span id="Note${number}"><select name="Instrument1" id="Instrument1">
+                    <br><span id="Note${number}"><select class="font-consolas" name="Instrument1" id="Instrument1">
                             <option value="BD">Bass Drum</option>
                             <option value="BN">Banjo</option>
                             <option value="B">Base</option>
