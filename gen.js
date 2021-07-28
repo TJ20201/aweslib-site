@@ -25,7 +25,7 @@ function newn() {
   let instrs = document.getElementsByClassName("instruments")[0];
   let html = instrs.innerHTML;
   try {
-    instrs.insertAdjacentHTML('beforeend', `<br><span class="font-consolas" id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
+    instrs.insertAdjacentHTML('beforeend', `<br><span id="Note${number}"><select class="font-consolas" name="Instrument${number}" id="Instrument${number}">
       <option value="BD">Bass Drum</option>
       <option value="BN">Banjo</option>
       <option value="B">Base</option>
