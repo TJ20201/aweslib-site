@@ -25,24 +25,28 @@ function newn() {
   let instrs = document.getElementsByClassName("instruments");
   let html = instrs.innerHTML;
   console.log(html)
-  instrs.innerHTML = html + `<br><span class="font-consolas" id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
-    <option value="BD">Bass Drum</option>
-    <option value="BN">Banjo</option>
-    <option value="B">Base</option>
-    <option value="BE">Bell</option>
-    <option value="BI">Bit</option>
-    <option value="C">Chime</option>
-    <option value="CB">Cow Bell</option>
-    <option value="DI">Didgeridoo</option>
-    <option value="F">Flute</option>
-    <option value="HU">Guitar</option>
-    <option value="H">Harp</option>
-    <option value="P">Pling</option>
-    <option value="HA">Hat</option>
-    <option value="SD">Snare Drum</option>
-    <option value="IX">Iron Xylophone</option>
-    <option value="X">Xylophone</option>
-  </select> <input type="text" name="Pitch${number}" id="Pitch${number}" placeholder="Pitch"> <button class="removebtn" onclick="remove(${number})">X</button></span>`
+  try {
+    instrs.innerHTML = html + `<br><span class="font-consolas" id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
+      <option value="BD">Bass Drum</option>
+      <option value="BN">Banjo</option>
+      <option value="B">Base</option>
+      <option value="BE">Bell</option>
+      <option value="BI">Bit</option>
+      <option value="C">Chime</option>
+      <option value="CB">Cow Bell</option>
+      <option value="DI">Didgeridoo</option>
+      <option value="F">Flute</option>
+      <option value="HU">Guitar</option>
+      <option value="H">Harp</option>
+      <option value="P">Pling</option>
+      <option value="HA">Hat</option>
+      <option value="SD">Snare Drum</option>
+      <option value="IX">Iron Xylophone</option>
+      <option value="X">Xylophone</option>
+    </select> <input type="text" name="Pitch${number}" id="Pitch${number}" placeholder="Pitch"> <button class="removebtn" onclick="remove(${number})">X</button></span>`
+  } catch(err) {
+    console.log(err)
+  }
 }
    
 function remove(x) {
