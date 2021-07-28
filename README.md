@@ -19,3 +19,6 @@
   <li>After generating your tune, copy the text it shows you and paste it into the "aweslib:notes" list as a text variable</li>
   <li>Call your song function then "aweslib:song", and see if it works!</li>
 </ol>
+
+
+<button href="/">Home</button>
