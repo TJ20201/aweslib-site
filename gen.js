@@ -22,7 +22,7 @@ function generate() {
 function newn() {
   number++;
   
-  let instrs = document.body.getElementsByClassName("instruments");
+  let instrs = document.getElementsByClassName("instruments")[0];
   let html = instrs.innerHTML;
   try {
     instrs.insertAdjacentHTML('beforeend', `<br><span class="font-consolas" id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
