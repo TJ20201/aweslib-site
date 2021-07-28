@@ -43,6 +43,7 @@ function newn() {
       <option value="IX">Iron Xylophone</option>
       <option value="X">Xylophone</option>
     </select> <input type="text" name="Pitch${number}" id="Pitch${number}" placeholder="Pitch"> <button class="removebtn" onclick="remove(${number})">X</button></span>`
+    console.log("Success")
   } catch(err) {
     console.log(err)
   }
