@@ -1,4 +1,4 @@
-# AwesomeSoundLib (aweslib) ![Icon](icon.ico) 
+# AwesomeSoundLib (aweslib)
 aweslib is a library on [DiamondFire](https://mcdiamondfire.com) made by [SirObby_](https://github.com/SirObby).
 ## Importing
   1. To import aweslib into your DiamondFire plot, first go to the **Code Vault** (you can get to that plot by going to spawn, holding the Emerald/Game Menu item and typing "Code Vault". The correct one is made by *trashoflevillage*).
