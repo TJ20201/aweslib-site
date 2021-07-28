@@ -22,10 +22,10 @@ function generate() {
 function newn() {
   number++;
   
-  let frame = document.getElementsByClassName("instruments");
-  let html = frame.innerHTML;
+  let instrs = document.getElementsByClassName("instruments");
+  let html = instrs.innerHTML;
   console.log(html)
-  frame.innerHTML = html + `<br><span id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
+  instrs.innerHTML = html + `<br><span id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
     <option value="BD">Bass Drum</option>
     <option value="BN">Banjo</option>
     <option value="B">Base</option>
