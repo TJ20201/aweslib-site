@@ -25,7 +25,7 @@ function newn() {
   let instrs = document.body.getElementsByClassName("instruments");
   let html = instrs.innerHTML;
   try {
-    instrs.innerHTML = html + `<br><span class="font-consolas" id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
+    instrs.insertAdjacentHTML('beforeend', `<br><span class="font-consolas" id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
       <option value="BD">Bass Drum</option>
       <option value="BN">Banjo</option>
       <option value="B">Base</option>
@@ -42,7 +42,7 @@ function newn() {
       <option value="SD">Snare Drum</option>
       <option value="IX">Iron Xylophone</option>
       <option value="X">Xylophone</option>
-    </select> <input type="text" name="Pitch${number}" id="Pitch${number}" placeholder="Pitch"> <button class="removebtn" onclick="remove(${number})">X</button></span>`
+    </select> <input type="text" name="Pitch${number}" id="Pitch${number}" placeholder="Pitch"> <button class="removebtn" onclick="remove(${number})">X</button></span>`)
     console.log("Success")
   } catch(err) {
     console.log(err)
