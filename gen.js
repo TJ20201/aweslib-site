@@ -22,9 +22,8 @@ function generate() {
 function newn() {
   number++;
   
-  let instrs = document.getElementsByClassName("instruments");
+  let instrs = document.body.getElementsByClassName("instruments");
   let html = instrs.innerHTML;
-  console.log(html)
   try {
     instrs.innerHTML = html + `<br><span class="font-consolas" id="Note${number}"><select name="Instrument${number}" id="Instrument${number}">
       <option value="BD">Bass Drum</option>
