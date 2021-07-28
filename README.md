@@ -1,3 +1,4 @@
+<h1>AwesomeSoundLib (aweslib)</h1>
 # AwesomeSoundLib (aweslib)
 aweslib is a library on [DiamondFire](https://mcdiamondfire.com) made by [SirObby_](https://github.com/SirObby).
 ## Importing
